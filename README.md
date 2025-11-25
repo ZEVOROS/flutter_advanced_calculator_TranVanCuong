@@ -1,75 +1,107 @@
-Dưới đây là một file **README.md** được viết lại dành cho project Flutter Calculator của bạn, trình bày rõ ràng, dễ đọc và có đầy đủ hướng dẫn cơ bản:
+🧮 Advanced Calculator
 
-````markdown
-# Flutter Calculator App
+A professional multi-mode Flutter calculator with scientific, programmer, history, theme, and advanced UX features.
 
-A simple and responsive calculator app built with **Flutter**. This app supports basic arithmetic operations, percentage, change sign, and a history display for past calculations.
+🚀 Overview
 
----
+Advanced Calculator là một ứng dụng Flutter được phát triển nhằm mô phỏng một máy tính chuyên nghiệp với đầy đủ ba chế độ:
 
-## Features
+Basic Mode
 
-- Basic arithmetic operations: **Addition (+), Subtraction (-), Multiplication (×), Division (÷)**
-- Percentage calculation (%)
-- Change sign (±)
-- Clear display (`C`) and delete last character (`CE`)
-- Continuous calculations without resetting
-- Calculation history display
-- Responsive UI that scales to different screen sizes
-- Error handling for invalid operations (e.g., division by zero)
+Scientific Mode
 
----
+Programmer Mode
 
-## Screenshots
+Ứng dụng được xây dựng với kiến trúc tách lớp rõ ràng, state management bằng Provider, hỗ trợ lịch sử phép tính, chế độ sáng/tối, tùy chỉnh cài đặt, và hiệu ứng animation mượt mà.
 
-| Calculator Display | Button Panel |
-|-------------------|--------------|
-| ![Calculator Display](screenshots/display.png) | ![Button Panel](screenshots/buttons.png) |
+Đây là bài tập lớn thuộc Chapter 3 – Advanced Mobile Calculator.
 
-*Note: Add your own screenshots in the `screenshots` folder.*
+✨ Features
+🔢 Basic Mode
 
----
+Các phép toán cơ bản (+, -, ×, ÷)
 
-## Getting Started
+C, CE, %, ±
 
-### Prerequisites
+Hỗ trợ dấu ngoặc
 
-- Flutter SDK >= 3.0
-- Dart >= 3.0
-- Android Studio or VS Code (recommended)
-- Device or emulator to run the app
+Hiển thị biểu thức nhiều dòng
 
-### Installation
+🧪 Scientific Mode
 
-1. Clone the repository:
+sin, cos, tan + các hàm ngược
 
-```bash
-git clone https://github.com/your-username/flutter_calculator.git
-cd flutter_calculator
-````
+log, ln, log₂
 
-2. Get dependencies:
+x², x³, xʸ, √, ∛
 
-```bash
-flutter pub get
-```
+Hằng số π, e
 
-3. Run the app:
+n! (giai thừa)
 
-```bash
-flutter run
-```
+DEG/RAD mode
 
----
+Implicit multiplication (2π)
 
-## Usage
+🖥️ Programmer Mode
 
-* Tap numeric buttons to input numbers.
-* Tap operation buttons (`+`, `-`, `×`, `÷`) to perform calculations.
-* Tap `=` to get the result.
-* Use `C` to clear all, `CE` to delete the last input.
-* Tap `±` to change the sign of the current number.
-* Tap `%` to convert the current number to a percentage.
-* Past calculations are displayed in the history section.
+Chuyển đổi hệ nhị phân / octal / decimal / hex
 
----
+Bitwise: AND, OR, XOR, NOT
+
+Dịch bit: <<, >>
+
+📜 History System
+
+Lưu tối đa 50 phép tính
+
+Lưu qua SharedPreferences
+
+Chạm để dùng lại phép tính
+
+Vuốt lên để mở bảng lịch sử
+
+🎨 Themes & UI
+
+Light/Dark Mode
+
+Animation chuyển chế độ
+
+Button animation (200ms)
+
+Responsive Layout
+
+Material You style
+
+⚙️ Settings
+
+Theme: Light / Dark / System
+
+Decimal precision: 2–10
+
+Angle Mode: DEG/RAD
+
+Haptic feedback
+
+Âm thanh bấm phím
+
+Xóa toàn bộ lịch sử
+
+🧪 Testing
+
+Unit test cho logic tính toán
+
+Integration test: nhập chuỗi nút, đổi mode, lưu lịch sử
+
+Mục tiêu coverage: >80%
+
+🏗 Project Structure
+lib/
+ ├── constants.dart
+ ├── main.dart
+ ├── models/
+ ├── providers/
+ ├── screens/
+ ├── widgets/
+ ├── utils/
+ └── services/
